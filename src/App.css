@@ -231,10 +231,97 @@ body {
 .containerHexa div {
   background-color: tranparent;
   width: var(--s);
-  margin: var(--m);
+  /* margin: var(--m); */
+  margin: 2%;
   height: calc(var(--s) * 1.1547);
   display: inline-block;
   font-size: initial; /* we reset the font-size if we want to add some content */
   /* clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%); */
-
 }
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 5s linear;
+  -moz-animation: rotating 5s linear;
+  -ms-animation: rotating 5s linear;
+  -o-animation: rotating 5s linear;
+  animation: rotating 5s linear;
+}
+
+
+.hori-timeline .events {
+  border-top: 3px solid #e9ecef;
+}
+.hori-timeline .events .event-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  width: 75px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+@media (min-width: 1140px) {
+  .hori-timeline .events .event-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
+  }
+  .hori-timeline .events .event-list .event-date {
+      top: -12px;
+  }
+}
+/* .bg-soft-primary {
+  background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+  background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+  background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+  background-color: rgba(249,213,112,.3)!important;
+} */
