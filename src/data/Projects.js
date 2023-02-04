@@ -1,23 +1,49 @@
+export const ProjectsData = [
 
+  {
+    title: "Agence La Panthère",
+    description: `Une agence de web design HTML/CSS`,
+    image: "https://yelmouss.github.io/Agence-la-panth-re/img/logo.png",
+    link: "https://yelmouss.github.io/Agence-la-panth-re/",
+  },
+  {
+    title: "Recouvrement Template",
+    description: `Site Vitrine / Admin Lte`,
+    image: "./img/portfolio-1.png",
+    link: "https://recouvrement.yelmouss.com/",
+  },
+  {
+    title: "WFM APP (private)",
+    description: `Bluild by Laravel full POO for Workforce Management`,
+    image: "https://recouvrement.yelmouss.com/dist/img/logo-MCC2.png",
+    link: "https://recouvrement.yelmouss.com/",
+  },
+  {
+    title: "KASA",
+    description: `Application de location immobilière`,
+    image:
+      "http://kasa.yelmouss.com/static/media/logo-kasa.bb1c78bdbf97911cf6044e13e0c4f670.svg",
+    link: "http://kasa.yelmouss.com/",
+  },
 
-  export const ProjectsData = [
-    {
-      title: 'E-commerce Boutique',
-      description: `Laravel is an open-source web framework written in PHP respecting the model-view-controller principle and entirely developed in object-oriented programming`,
-      image: 'https://beprettykenitra.com/img/fenna.jpeg',
-      link :"https://beprettykenitra.com/",   
-    },
-    {
-      title: 'E-commerce 2',
-      description: `Laravel is an open-source web framework written in PHP respecting the model-view-controller principle and entirely developed in object-oriented programming`,
-      image: 'https://beprettykenitra.com/img/fenna.jpeg',
-      link :"https://yelmouss.github.io/ohmyfood/",   
-    },
-    {
-      title: 'SCSS Oh My-Food',
-      description: `Scss Préprocessor / Mobile App`,
-      image: 'https://yelmouss.github.io/ohmyfood/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg',
-      link :"https://beprettykenitra.com/",   
-    },
-   
+  {
+    title: "Kanap",
+    description: `E-commerce Utilisant Javascript`,
+    image: "https://yelmouss.github.io/Kanap/front/images/banniere.png",
+    link: "https://yelmouss.github.io/Kanap/front/html/index.html",
+  },
+  {
+    title: "SCSS Oh My-Food",
+    description: `Scss Préprocessor / Mobile App`,
+    image:
+      "https://yelmouss.github.io/ohmyfood/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
+    link: "https://yelmouss.github.io/ohmyfood/",
+  },
+  {
+    title: "E-commerce Boutique",
+    description: `Laravel Project E-commerce`,
+    image:
+      "data:image/jpeg;base64,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",
+    link: "https://beprettykenitra.com/",
+  },
 ];

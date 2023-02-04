@@ -7,7 +7,8 @@ import Header from "./components/Template/header";
 import Footer from "./components/Template/footer";
 import Home from "./components/Pages/home";
 import About from "./components/Pages/about";
-// import Gpt from "./components/gpt";
+import Projet from "./components/Pages/projet";
+import Service from "./components/Pages/service";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -23,10 +24,7 @@ function App() {
 
   return (
     <div className="App col-12">
-      <Header dark={dark} updateDark={updateDark} />
-
-  
-
+      <Header dark={dark} updateDark={updateDark} /> 
       <Routes>
         <Route
           path="/"
@@ -35,6 +33,14 @@ function App() {
          <Route
           path="/About"
           element={<About dark={dark} updateDark={updateDark} />}
+        />
+            <Route
+          path="/Projet"
+          element={<Projet dark={dark} updateDark={updateDark} />}
+        />
+                <Route
+          path="/Service"
+          element={<Service dark={dark} updateDark={updateDark} />}
         />
       </Routes>
       <Footer dark={dark} updateDark={updateDark} />

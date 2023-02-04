@@ -1,14 +1,24 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
+// import Particles from "react-tsparticles";
+// import { loadFull } from "tsparticles";
 
 const position = [51.505, -0.09];
 
 function Footer({ dark, updateDark }) {
 
+    // const particlesInit = async (main) => {
+    //     console.log(main);
+    
+    //     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    //     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    //     // starting from v2 you can add only the features you need reducing the bundle size
+    //     await loadFull(main);
+    //   };
   return (
     <>
       <footer
-        className={` ${
+        className={`${
           dark
             ? "footer text-dark p-2 bg-transparent"
             : "bg-dark footer  text-success p-2 "
@@ -20,7 +30,7 @@ function Footer({ dark, updateDark }) {
     
           <div className="row">
             
-            <div className="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3  p-2">
+            <div className="col-md-6 col-lg-6 col-xl-6 mx-auto p-2">
               <h6 className="text-uppercase mb-4 fw-bold fst-italic">
                 {"<"} Yelmouss in the Map{"/>"}
               </h6>
@@ -79,7 +89,6 @@ function Footer({ dark, updateDark }) {
         >
           <i className="fa fa-whatsapp my-float"></i>
         </a>
-
       </footer>
     </>
   );

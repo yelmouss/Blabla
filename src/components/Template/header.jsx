@@ -2,7 +2,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { React } from "react";
-
+// import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Header({ dark, updateDark }) {
   return (
     <>
@@ -21,19 +22,35 @@ function Header({ dark, updateDark }) {
                 width="30"
                 height="30"
                 className="d-inline-block align-top bg-light rounded"
-              />{" "}
+              />
               Y-Elmouss
             </Navbar.Brand>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto text-center">
-                <Nav.Link href="/" className="active">
+                <Link
+                  to="/"
+                  className={`Navlink  shaked ${dark ? "text-dark" : "text-light"}`}
+                >
                   Home
-                </Nav.Link>
-                <Nav.Link href="About" className="active">
+                </Link>
+                <Link
+                  to="/About"
+                  className={`Navlink  shaked ${dark ? "text-dark" : "text-light"}`}
+                >
                   About
-                </Nav.Link>
-                <Nav.Link href="/Projects">Projects</Nav.Link>
-                <Nav.Link href="Contact">Contact</Nav.Link>
+                </Link>
+                <Link
+                  to="/Projet"
+                  className={`Navlink shaked  ${dark ? "text-dark" : "text-light"}`}
+                >
+                  Protfolio
+                </Link>
+                <Link
+                  to="/Service"
+                  className={`Navlink shaked  ${dark ? "text-dark" : "text-light"}`}
+                >
+                  Services
+                </Link>
               </Nav>
             </Navbar.Collapse>
             <div className="justify-content-end">
@@ -49,7 +66,6 @@ function Header({ dark, updateDark }) {
                       updateDark(!dark, localStorage.setItem("dark", !dark))
                     }
                   ></i>
-                  {dark ? <i className="col text-nowrap text-dark">Mode Light</i> : ""}
                 </div>
               </div>
             </div>
@@ -57,6 +73,21 @@ function Header({ dark, updateDark }) {
           </Container>
         </Navbar>
       </header>
+
+      <div className="icon-bar">
+        <a href="https://facebook.com/yelmuss" className="facebook" target={"_blank"} rel="noreferrer">
+          <i className="fa fa-facebook"></i>
+        </a>       
+        <a href="https://g.page/r/CU9JIKmBu2pkEB0/review" target={"_blank"} className="google" rel="noreferrer">
+          <i className="fa fa-google"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yelmouss/" className="linkedin" target={"_blank"} rel="noreferrer">
+          <i className="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/yelmouss" className="github"target={"_blank"} rel="noreferrer">
+          <i className="fa fa-github"></i>
+        </a>
+      </div>
     </>
   );
 }
