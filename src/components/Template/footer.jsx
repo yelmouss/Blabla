@@ -1,17 +1,17 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 
-const position = [51.505, -0.09];
+const position = [33.991980191627185, -6.874611381541911];
 
 function Footer({ dark, updateDark }) {
 
   return (
     <>
       <footer
-        className={` ${
+        className={`footer mt-auto fw-bold py-3 ${
           dark
-            ? "footer text-dark p-2 bg-transparent"
-            : "bg-dark footer  text-success p-2 "
+            ? "text-dark p-2"
+            : "bg-dark text-light  p-2 "
         }`}
       >
         
@@ -20,13 +20,13 @@ function Footer({ dark, updateDark }) {
     
           <div className="row">
             
-            <div className="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3  p-2">
+            <div className="col-md-6 col-lg-6 col-xl-6 mx-auto">
               <h6 className="text-uppercase mb-4 fw-bold fst-italic">
                 {"<"} Yelmouss in the Map{"/>"}
               </h6>
               <MapContainer
-                center={[51.505, -0.09]}
-                zoom={14}
+                center={[33.991980191627185, -6.874611381541911]}
+                zoom={8}
                 scrollWheelZoom={false}
                 className="rounded"
               >
@@ -47,15 +47,22 @@ function Footer({ dark, updateDark }) {
                 {"<"} Infos Contact {"/>"}
               </h6>
               <hr />
-              <p>
-                <i className="fas fa-home mr-3"></i> Rabat, Agdal 10095, MA
-              </p>
+              <div className="text-start">
+              
               <p>
                 <i className="fas fa-envelope mr-3"></i> yelmouss@yelmouss.com
               </p>
               <p>
+                <i className="fas fa-envelope mr-3"></i> yelmouss.devt@gmail.com
+              </p>
+              <p>
                 <i className="fas fa-phone mr-3"></i> + 212 612 865 681
               </p>
+              <p>
+                <i className="fas fa-home mr-3"></i> Rabat, Agdal 10095, MA
+              </p>
+              </div>
+            
             </div>
           </div>
         </div>

@@ -1,5 +1,12 @@
 export const ProjectsData = [
 
+    {
+    title: "Dashboard Instructor",
+    description: `Dashboard using react JS`,
+    image: "https://yelmouss.com/img/Geek.png",
+    link: "https://yelmouss.com/code_geeks/",
+  },
+
   {
     title: "Agence La Panthère",
     description: `Une agence de web design HTML/CSS`,

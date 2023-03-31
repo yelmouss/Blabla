@@ -12,7 +12,7 @@ function Header({ dark, updateDark }) {
           bg={`${dark ? "light" : "dark"}`}
           variant={`${dark ? "light" : "dark"}`}
           expand="lg"
-          className={`${dark ? "col-12" : "col-12"}`}
+          className={`fw-bolder ${dark ? "col-12" : "col-12"}`}
         >
           <Container>
             <Navbar.Brand href="/">
@@ -23,31 +23,48 @@ function Header({ dark, updateDark }) {
                 height="30"
                 className="d-inline-block align-top bg-light rounded"
               />
-              Y-Elmouss
+              {"Yelmouss".split("").map((letter, index) => {
+                return (
+                  <span
+                    key={index}
+                    className="text-fun-pink"
+                  >
+                    {letter}
+                  </span>
+                );
+              })}
             </Navbar.Brand>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto text-center">
                 <Link
                   to="/"
-                  className={`Navlink  shaked ${dark ? "text-dark" : "text-light"}`}
+                  className={`Navlink  shaked ${
+                    dark ? "text-dark" : "text-light"
+                  }`}
                 >
                   Home
                 </Link>
                 <Link
                   to="/About"
-                  className={`Navlink  shaked ${dark ? "text-dark" : "text-light"}`}
+                  className={`Navlink  shaked ${
+                    dark ? "text-dark" : "text-light"
+                  }`}
                 >
                   About
                 </Link>
                 <Link
                   to="/Projet"
-                  className={`Navlink shaked  ${dark ? "text-dark" : "text-light"}`}
+                  className={`Navlink shaked  ${
+                    dark ? "text-dark" : "text-light"
+                  }`}
                 >
                   Protfolio
                 </Link>
                 <Link
                   to="/Service"
-                  className={`Navlink shaked  ${dark ? "text-dark" : "text-light"}`}
+                  className={`Navlink shaked  ${
+                    dark ? "text-dark" : "text-light"
+                  }`}
                 >
                   Services
                 </Link>
@@ -57,10 +74,10 @@ function Header({ dark, updateDark }) {
               <div className={`fw-light ${dark ? "text-light" : "text-dark"}`}>
                 <div className="row">
                   <i
-                    className={`${
+                    className={`fs-4 ${
                       dark
                         ? "fa-regular fa-moon text-dark col"
-                        : "fa-regular fa-sun text-light col"
+                        : "fa-regular fa-sun text-warning col"
                     }`}
                     onClick={() =>
                       updateDark(!dark, localStorage.setItem("dark", !dark))
@@ -74,17 +91,37 @@ function Header({ dark, updateDark }) {
         </Navbar>
       </header>
 
-      <div className="icon-bar">
-        <a href="https://facebook.com/yelmuss" className="facebook" target={"_blank"} rel="noreferrer">
+      <div className="icon-bar rounded p-1">
+        <a
+          href="https://facebook.com/yelmuss"
+          className="facebook rounded mb-1"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <i className="fa fa-facebook"></i>
-        </a>       
-        <a href="https://g.page/r/CU9JIKmBu2pkEB0/review" target={"_blank"} className="google" rel="noreferrer">
+        </a>
+        <a
+          href="https://g.page/r/CU9JIKmBu2pkEB0/review"
+          target={"_blank"}
+          className="google rounded mb-1"
+          rel="noreferrer"
+        >
           <i className="fa fa-google"></i>
         </a>
-        <a href="https://www.linkedin.com/in/yelmouss/" className="linkedin" target={"_blank"} rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/yelmouss/"
+          className="linkedin rounded mb-1"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <i className="fa fa-linkedin"></i>
         </a>
-        <a href="https://github.com/yelmouss" className="github"target={"_blank"} rel="noreferrer">
+        <a
+          href="https://github.com/yelmouss"
+          className="github rounded mb-1"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <i className="fa fa-github"></i>
         </a>
       </div>

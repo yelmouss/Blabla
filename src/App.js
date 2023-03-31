@@ -23,28 +23,26 @@ function App() {
   },[ModeDark])
 
   return (
-    <div className="App col-12">
-      <Header dark={dark} updateDark={updateDark} /> 
+    <><div     className={`App  flex-shrink-0 pb-5 ${
+      dark ? "" : " bg-dark text-light"
+    }`}>
+      <Header dark={dark} updateDark={updateDark} />
       <Routes>
         <Route
           path="/"
-          element={<Home dark={dark} updateDark={updateDark} />}
-        />
-         <Route
+          element={<Home dark={dark} updateDark={updateDark} />} />
+        <Route
           path="/About"
-          element={<About dark={dark} updateDark={updateDark} />}
-        />
-            <Route
+          element={<About dark={dark} updateDark={updateDark} />} />
+        <Route
           path="/Projet"
-          element={<Projet dark={dark} updateDark={updateDark} />}
-        />
-                <Route
+          element={<Projet dark={dark} updateDark={updateDark} />} />
+        <Route
           path="/Service"
-          element={<Service dark={dark} updateDark={updateDark} />}
-        />
+          element={<Service dark={dark} updateDark={updateDark} />} />
       </Routes>
       <Footer dark={dark} updateDark={updateDark} />
-    </div>
+    </div></>
   );
 
 }

@@ -1,11 +1,11 @@
 // import Typed from "react-typed";
 import React from "react";
-// import { TechData } from "../../data/Tech";
-// import openai from "openai";
+import Typed from "react-typed";
+import Font from "react-font";
 function About({ dark, updateDark }) {
   return (
     <>
-      <main className={`flex-shrink-0 ${dark ? "" : "home"}`}>
+      <main className={`flex-shrink-0 home ${dark ? "" : ""}`}>
         <div className="text-light container-fluid">
           <section
             id="about"
@@ -28,18 +28,33 @@ function About({ dark, updateDark }) {
                           alt="Yelmouss"
                         />
                         <br />
-                        <h1 className="text-uppercase ps-0 fs-2 fw-bolder  lh-1 position-relative p-2">
-                          About
-                        </h1>
-                        <h1 className="fw-bolder text-outlined ps-0 fs-lg-7 fs-sm-6 fs-5 lh-1 mt-sm-n4 mt-n3 position-relative ">
-                          Me
-                        </h1>
+                        <hr />
+                        <Font family="Fasthand">
+                          <h1
+                            className={`fst-italic mb-5 ${
+                              dark ? "text-dark" : "text-light"
+                            }`}
+                          >
+                            <Typed
+                              strings={["ABOUT Me"]}
+                              typeSpeed={80}
+                              showCursor={false}
+                            />
+                            <br />
+                            <Typed
+                              strings={["Yassine ELMOUSS"]}
+                              typeSpeed={80}
+                              showCursor={false}
+                            />
+                          </h1>
+                          <h1>FULLSTACK Web Developer</h1>
+                        </Font>
                       </div>
-                      <h1>Fullstack Web Developer</h1>
+                    
                       <p className="fst-italic">
                         Passionate about new technologies and Software Dev
                       </p>
-                      <div className="row">
+                      <div className="row ">
                         <div className="col-lg-6">
                           <ul>
                             <li>
