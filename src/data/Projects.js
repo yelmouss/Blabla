@@ -6,13 +6,20 @@ export const ProjectsData = [
     image: "https://yelmouss.com/img/Geek.png",
     link: "https://yelmouss.com/code_geeks/",
   },
-
+  {
+    title: "KASA",
+    description: `Application de location immobilière`,
+    image:
+      "./img/logo-kasa.svg",
+    link: "http://kasa.yelmouss.com/",
+  },
   {
     title: "Agence La Panthère",
     description: `Une agence de web design HTML/CSS`,
     image: "https://yelmouss.github.io/Agence-la-panth-re/img/logo.png",
     link: "https://yelmouss.github.io/Agence-la-panth-re/",
   },
+
   {
     title: "Recouvrement Template",
     description: `Site Vitrine / Admin Lte`,
@@ -25,13 +32,7 @@ export const ProjectsData = [
     image: "https://recouvrement.yelmouss.com/dist/img/logo-MCC2.png",
     link: "https://recouvrement.yelmouss.com/",
   },
-  {
-    title: "KASA",
-    description: `Application de location immobilière`,
-    image:
-      "http://kasa.yelmouss.com/static/media/logo-kasa.bb1c78bdbf97911cf6044e13e0c4f670.svg",
-    link: "http://kasa.yelmouss.com/",
-  },
+
 
   {
     title: "Kanap",

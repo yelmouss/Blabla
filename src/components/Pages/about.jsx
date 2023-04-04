@@ -1,39 +1,46 @@
 // import Typed from "react-typed";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Typed from "react-typed";
 import Font from "react-font";
 function About({ dark, updateDark }) {
+
+  const [title, setTitle] = useState();
+
+  useEffect(() => {
+    setTitle("Yelmouss - About")
+    document.title = title;
+  }, [title]);
   return (
     <>
-      <main className={`flex-shrink-0 home ${dark ? "" : ""}`}>
+      <main className={`flex-shrink-0 home  pt-5 mt-5  ${dark ? "" : ""}`}>
         <div className="text-light container-fluid">
           <section
             id="about"
-            className={`about container-fluid ${
-              dark ? "text-dark" : "text-light"
-            }`}
+            className={`about container-fluid    ${dark ? "text-dark" : "text-light"
+              }`}
           >
-            <div className="container-fluid">
+            <div className="container-fluid ">
               <div className="row">
                 <div
                   className="container-fluid col-lg-10 content bg-transparent mt-2"
                   data-aos="fade-left"
                 >
                   <div className="row">
-                    <div className="col">
-                      <div className="text-left  p-2">
-                        <img
-                          src="img/yass.png"
-                          className="img-fluid h-25 p-0 col-7 col-lg-5 rounded mb-2"
-                          alt="Yelmouss"
-                        />
-                        <br />
-                        <hr />
-                        <Font family="Fasthand">
+                    <div className="col ">
+                      <div className="text-left  p-2 ">
+                       
+                          <img
+                            src="img/yass.png"
+                            className="blob  img-fluid h-25 p-0 col-4 col-lg-5 rounded mb-2 float-end"
+                            alt="Yelmouss"
+                          />
+                       
+
+
+                        <Font family="Ubuntu">
                           <h1
-                            className={`fst-italic mb-5 ${
-                              dark ? "text-dark" : "text-light"
-                            }`}
+                            className={`fst-italic  mb-5 ${dark ? "text-dark" : "text-light"
+                              }`}
                           >
                             <Typed
                               strings={["ABOUT Me"]}
@@ -47,15 +54,16 @@ function About({ dark, updateDark }) {
                               showCursor={false}
                             />
                           </h1>
+                          <hr />
                           <h1>FULLSTACK Web Developer</h1>
                         </Font>
                       </div>
-                    
+
                       <p className="fst-italic">
                         Passionate about new technologies and Software Dev
                       </p>
-                      <div className="row ">
-                        <div className="col-lg-6">
+                      <div className="row  ">
+                        <div className="col-lg-6 ">
                           <ul>
                             <li>
                               <i

@@ -2,7 +2,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { React } from "react";
-// import { Link, NavLink } from "react-router-dom";
+
+import {
+  HiOutlineHomeModern,
+  HiCommandLine,
+  HiOutlineIdentification,
+  HiOutlineBriefcase,
+} from "react-icons/hi2";
+
 import { Link } from "react-router-dom";
 function Header({ dark, updateDark }) {
   return (
@@ -12,7 +19,8 @@ function Header({ dark, updateDark }) {
           bg={`${dark ? "light" : "dark"}`}
           variant={`${dark ? "light" : "dark"}`}
           expand="lg"
-          className={`fw-bolder ${dark ? "col-12" : "col-12"}`}
+          className={`fw-bolder shadow-lg ${dark ? "col-12" : "col-12"}`}
+          fixed="top"
         >
           <Container>
             <Navbar.Brand href="/">
@@ -23,12 +31,9 @@ function Header({ dark, updateDark }) {
                 height="30"
                 className="d-inline-block align-top bg-light rounded"
               />
-              {"Yelmouss".split("").map((letter, index) => {
+              {" Yelmouss".split("").map((letter, index) => {
                 return (
-                  <span
-                    key={index}
-                    className="text-fun-pink"
-                  >
+                  <span key={index} className="text-fun-pink">
                     {letter}
                   </span>
                 );
@@ -42,7 +47,7 @@ function Header({ dark, updateDark }) {
                     dark ? "text-dark" : "text-light"
                   }`}
                 >
-                  Home
+                  <HiOutlineHomeModern /> Home
                 </Link>
                 <Link
                   to="/About"
@@ -50,7 +55,7 @@ function Header({ dark, updateDark }) {
                     dark ? "text-dark" : "text-light"
                   }`}
                 >
-                  About
+                  <HiOutlineIdentification /> About
                 </Link>
                 <Link
                   to="/Projet"
@@ -58,23 +63,24 @@ function Header({ dark, updateDark }) {
                     dark ? "text-dark" : "text-light"
                   }`}
                 >
-                  Protfolio
+                 <HiOutlineBriefcase/> Protfolio
                 </Link>
                 <Link
                   to="/Service"
-                  className={`Navlink shaked  ${
+                  className={`Navlink shaked   ${
                     dark ? "text-dark" : "text-light"
                   }`}
                 >
-                  Services
+                  <HiCommandLine />
+                  Services 
                 </Link>
               </Nav>
             </Navbar.Collapse>
             <div className="justify-content-end">
               <div className={`fw-light ${dark ? "text-light" : "text-dark"}`}>
-                <div className="row">
+                <div className="row ">
                   <i
-                    className={`fs-4 ${
+                    className={`fs-4  ${
                       dark
                         ? "fa-regular fa-moon text-dark col"
                         : "fa-regular fa-sun text-warning col"
