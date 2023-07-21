@@ -1,6 +1,17 @@
 export const ProjectsData = [
-
-    {
+  {
+    title: "e-commerce",
+    description: `Logiciel e-commerce par PrestaShop`,
+    image: "https://yelmouss.com/prestashop/6-large_default/mug-the-best-is-yet-to-come.jpg",
+    link: "https://yelmouss.com/prestashop/fr/",
+  },
+  {
+    title: "GameHub",
+    description: `App Game Rating`,
+    image: "https://media.rawg.io/media/crop/600/400/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
+    link: "https://gamehub-8nfb.onrender.com/",
+  },
+  {
     title: "Dashboard Instructor",
     description: `Dashboard using react JS`,
     image: "https://yelmouss.com/img/Geek.png",
@@ -9,8 +20,7 @@ export const ProjectsData = [
   {
     title: "KASA",
     description: `Application de location immobilière`,
-    image:
-      "./img/logo-kasa.svg",
+    image: "./img/logo-kasa.svg",
     link: "http://kasa.yelmouss.com/",
   },
   {
@@ -32,7 +42,6 @@ export const ProjectsData = [
     image: "https://recouvrement.yelmouss.com/dist/img/logo-MCC2.png",
     link: "https://recouvrement.yelmouss.com/",
   },
-
 
   {
     title: "Kanap",

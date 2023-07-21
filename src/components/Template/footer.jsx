@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-
+import { Container } from "react-bootstrap";
 const position = [33.991980191627185, -6.874611381541911];
 
 function Footer({ dark, updateDark }) {
@@ -13,23 +13,19 @@ function Footer({ dark, updateDark }) {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xl-6 mx-auto  mt-5">
-                      
-              <MapContainer
-                center={[33.991980191627185, -6.874611381541911]}
-                zoom={8}
-                scrollWheelZoom={false}
-                className="rounded"
-              >
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="https://yelmouss.com">Yelmouss</a>'
-                />
-                <Marker position={position}>
-                  <Popup>
-                    YELMOUSS. <br /> Location.
-                  </Popup>
-                </Marker>
-              </MapContainer>
+            <Container>
+                <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+                    <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={position}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                </MapContainer>
+            </Container>
             </div>
         
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 ">

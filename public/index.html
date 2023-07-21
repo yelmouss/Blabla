@@ -10,13 +10,29 @@
       content="Yassine ELMOUSS - FULLSTACK Web Developer"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/Geek.png" />
-    <script src="https://kit.fontawesome.com/5332a3090c.js" crossorigin="anonymous"></script>
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />   
+    <script
+      src="https://kit.fontawesome.com/5332a3090c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PWH2H03MM9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PWH2H03MM9");
+    </script>
     <title>Yelmouss</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
   </body>
 </html>

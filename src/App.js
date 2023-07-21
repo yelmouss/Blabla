@@ -44,7 +44,7 @@ function App() {
           />
           <Route
             path="*"
-            element={<NotFound />}
+            element={<NotFound dark={dark} updateDark={updateDark}  />}
           />
         </Routes>
         <Footer dark={dark} updateDark={updateDark} />
