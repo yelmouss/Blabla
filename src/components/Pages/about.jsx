@@ -35,8 +35,6 @@ function About({ dark, updateDark }) {
                             alt="Yelmouss"
                           />
                        
-
-
                         <Font family="Ubuntu" className={"card"}>
                           <h1
                             className={`fst-italic bg-light text-dark p-3 bg-opacity-50  mb-5 ${dark ? "text-dark" : "text-light"
@@ -59,7 +57,7 @@ function About({ dark, updateDark }) {
                         </Font>
                       </div>
 
-                      <p className="fst-italic card">
+                      <p className="fst-italic card bg-light text-dark p-3 bg-opacity-50">
                         Passionate about new technologies and Software Dev
                       </p>
                       <div className="row  bg-light text-dark p-3 bg-opacity-50 ">
