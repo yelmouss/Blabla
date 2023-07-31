@@ -37,9 +37,9 @@ function About({ dark, updateDark }) {
                        
 
 
-                        <Font family="Ubuntu">
+                        <Font family="Ubuntu" className={"card"}>
                           <h1
-                            className={`fst-italic  mb-5 ${dark ? "text-dark" : "text-light"
+                            className={`fst-italic bg-light text-dark p-3 bg-opacity-50  mb-5 ${dark ? "text-dark" : "text-light"
                               }`}
                           >
                             <Typed
@@ -59,10 +59,10 @@ function About({ dark, updateDark }) {
                         </Font>
                       </div>
 
-                      <p className="fst-italic">
+                      <p className="fst-italic card">
                         Passionate about new technologies and Software Dev
                       </p>
-                      <div className="row  ">
+                      <div className="row  bg-light text-dark p-3 bg-opacity-50 ">
                         <div className="col-lg-6 ">
                           <ul>
                             <li>
@@ -135,12 +135,13 @@ function About({ dark, updateDark }) {
                           </ul>
                         </div>
                       </div>
+                      <hr />
                       <p className="fs-3 fst-italic">
                         Certified in both F/E and B/E technologies. I developed
                         applications and programs that made the work amazing
                       </p>
                     </div>
-                    <div className="col-11 col-lg-6 ">
+                    <div className="col-11 col-lg-6 bg-light text-dark p-3 bg-opacity-50 ">
                       <section className="py-5">
                         <ul className="timeline-with-icons">
                           <li className="timeline-item mb-5">

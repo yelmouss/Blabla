@@ -10,6 +10,7 @@ function Footer({ dark, updateDark }) {
           dark ? "text-dark" : "bg-dark text-light"
         }`}
       >
+        <hr />
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xl-6 mx-auto  mt-5">
@@ -28,7 +29,7 @@ function Footer({ dark, updateDark }) {
             </Container>
             </div>
         
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 ">
+            <div className="col-md-4 col-lg-4 mx-auto mt-3 bg-light text-dark p-3 bg-opacity-25 rounded ">
               <h6 className="text-uppercase font-weight-bold p-2 rounded">
                Infos Contact
               </h6>

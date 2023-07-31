@@ -40,7 +40,7 @@ function Service({ dark, updateDark }) {
                 {ServiceData.map((item, i) => (
 
 
-                  <div className="card p-5  bg-transparent  col-lg-3" key={i}>
+                  <div className="card p-5  bg-light m-1  col-lg-3" key={i}>
                     <img
                       src={item.img}
                       className="card-img-top h-50 objectfit"

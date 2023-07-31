@@ -65,6 +65,20 @@ function Home({ dark, updateDark }) {
     }
   };
 
+  window.addEventListener('scroll', function() {
+    var parallaxImage = document.querySelector('.rotating');
+    var scrollPosition = window.pageYOffset;
+
+    parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.9 + 'px)';
+});
+
+var rotatingElement = document.querySelector('.rotating');
+rotatingElement.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
   return (
     <>
       <main
@@ -72,7 +86,7 @@ function Home({ dark, updateDark }) {
           dark ? "" : " bg-dark text-light"
         }`}
       >
-        <div className="container text-center  ">
+        <div className="container text-center   ">
           <div
             className={`row p-2 text-center blob ${
               dark ? "text-dark" : "text-light"
@@ -164,7 +178,7 @@ function Home({ dark, updateDark }) {
             </div>
           </div>
 
-          <div className="container col-12 text-center ">
+          <div className="container col-12 text-center bg-light text-dark bg-opacity-50 rounded">
             <div className="row mt-5 pt-5">
               <div className="col-lg-6 ">
                 <h2 className="mt-2 text-start ">

@@ -980,3 +980,32 @@ body {
 .button:not(:last-child) {
   margin-bottom: 80px;
 }
+/* 
+.bg-animated{
+
+  
+  background-image: url('../public/img/1.png');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease-out;
+} */
+
+
+.parallax-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/img/38.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}

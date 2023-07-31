@@ -93,7 +93,7 @@ export const TechData = [
     description: `Node.js® is an open-source, cross-platform JavaScript runtime environment`,
     doc: "",
     image:
-      "https://arka-buckets.s3.us-east-2.amazonaws.com/uploads/2022/03/angular-1-1-e1648624853981.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
   },
   {
     title: "VBA",
