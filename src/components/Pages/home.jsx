@@ -68,10 +68,7 @@ function Home({ dark, updateDark }) {
   window.addEventListener('scroll', function () {
     var parallaxImage = document.querySelector('.rotating');
     var scrollPosition = window.pageYOffset;
-
-    parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.9 + 'px)';
-
-   
+    parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.9 + 'px)';   
     parallaxImage.addEventListener('click', function () {
       window.scrollTo({
         top: 0,

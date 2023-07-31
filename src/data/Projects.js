@@ -2,7 +2,7 @@ export const ProjectsData = [
   {
     title: "Admin Dashboard",
     description: `Dashboard Adaptable avec tout type de besoin pour entreprises`,
-    image: "./img/capture.png",
+    image: "https://store-wp.mui.com/wp-content/uploads/2021/11/Thumbnail.png",
     link: "https://dash-board-instructor.vercel.app/dashboard",
   },
   {
