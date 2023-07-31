@@ -65,32 +65,32 @@ function Home({ dark, updateDark }) {
     }
   };
 
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     var parallaxImage = document.querySelector('.rotating');
     var scrollPosition = window.pageYOffset;
 
     parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.9 + 'px)';
-});
 
-var rotatingElement = document.querySelector('.rotating');
-rotatingElement.addEventListener('click', function() {
-    window.scrollTo({
+   
+    parallaxImage.addEventListener('click', function () {
+      window.scrollTo({
         top: 0,
         behavior: 'smooth'
+      });
     });
-});
+  });
+
+
   return (
     <>
       <main
-        className={`d-flex flex-column flex-shrink-0 home pb-5 pt-5 mt-5 ${
-          dark ? "" : " bg-dark text-light"
-        }`}
+        className={`d-flex flex-column flex-shrink-0 home pb-5 pt-5 mt-5 ${dark ? "" : " bg-dark text-light"
+          }`}
       >
         <div className="container text-center   ">
           <div
-            className={`row p-2 text-center blob ${
-              dark ? "text-dark" : "text-light"
-            }`}
+            className={`row p-2 text-center blob ${dark ? "text-dark" : "text-light"
+              }`}
           >
             <div className="col-lg-12 h-100  p-3  text-center">
               <div className="row ">
@@ -178,7 +178,7 @@ rotatingElement.addEventListener('click', function() {
             </div>
           </div>
 
-          <div className="container col-12 text-center bg-light text-dark bg-opacity-50 rounded">
+          <div className="container col-12 text-center bg-light text-dark bg-opacity-50 ">
             <div className="row mt-5 pt-5">
               <div className="col-lg-6 ">
                 <h2 className="mt-2 text-start ">
